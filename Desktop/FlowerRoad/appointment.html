@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
 
     <script type="text/javascript">
         function handleFormSubmit() {
@@ -21,6 +23,7 @@
             appointmentFormThanks.style.display = "block";
         };
     </script>
+
 </head>
 
 <body>
@@ -52,68 +55,69 @@
             </ul>
         </div>
     </nav>
+
     <div id=appointment>
 
-        <img style="width:30%; " src="images/appointment.jpg ">
+        <img style="width:40%;" src="images/appointment.jpg">
 
-        <div class="column " id="appointmentForm ">
-            <h1> Get In Touch.</h1>
-            <p>Please contact us through our form here.  We look forward to hearing from you!</p>
+        <div class="column" id="appointmentForm">
+            <h1>Get In Touch.</h1>
+            <p>Please contact us through our form here. We look forward to hearing from you!</p>
             <form>
-                <div class="fieldContainer ">
-                    <label>First name</label>
-                    <input type="text " name="firstname " placeholder="Enter your first name ">
+                <div class="fieldContainer">
+                    <label>First name</label> <br>
+                    <input type="text" name="firstname" placeholder="Enter your first name" required>
                 </div>
 
-                <div class="fieldContainer ">
-                    <label>Last name</label>
-                    <input type="text " name="firstname " placeholder="Enter your last name ">
+                <div class="fieldContainer">
+                    <label>Last name</label> <br>
+                    <input type="text" name="firstname" placeholder="Enter your last name" required>
                 </div>
 
-                <div class="fieldContainer ">
-                    <label>Date</label>
-                    <input type="text " name="firstname " placeholder="Preferred date">
+                <div class="fieldContainer">
+                    <label>Date</label> <br>
+                    <input type="text" name="firstname" placeholder="Preferred date" required>
                 </div>
 
-                <div class="fieldContainer ">
-                    <label>Time</label>
-                    <input type="text " name="firstname " placeholder="Preferred time">
+                <div class="fieldContainer">
+                    <label>Time</label> <br>
+                    <input type="text" name="firstname" placeholder="Preferred time" required>
                 </div>
 
-                <div class="fieldContainer ">
-                    <label>Designer</label>
-                    <input type="text " name="firstname " placeholder="Optional">
+                <div class="fieldContainer">
+                    <label>Designer</label> <br>
+                    <input type="text" name="firstname" placeholder="Optional">
                 </div>
 
-                <div class="fieldContainer ">
-                    <label>Phone</label>
-                    <input type="text " name="firstname " placeholder="xxx-xxx-xxxx">
+                <div class="fieldContainer">
+                    <label>Phone</label> <br>
+                    <input type="text" name="firstname" placeholder="xxx-xxx-xxxx" required>
                 </div>
 
-                <div class="fieldContainer ">
-                    <label>Email</label>
-                    <input type="text " name="firstname " placeholder="Enter your email address ">
+                <div class="fieldContainer">
+                    <label>Email</label> <br>
+                    <input type="text" name="firstname" placeholder="Enter your email address" required>
                 </div>
 
-                <div class="fieldContainer ">
-                    <label>How did you hear about us?</label>
-                    <input type="text " name="firstname " placeholder=" Brides, Friends, etc. ">
+                <div class="fieldContainer">
+                    <label>How did you hear about us?</label> <br>
+                    <input type="text" name="firstname" placeholder=" Brides, Friends, etc. ">
                 </div>
 
-                <div class="fieldContainer ">
-                    <label>Message</label>
-                    <input type="text " name="firstname ">
+                <div class="fieldContainer">
+                    <label>Message</label> <br>
+                    <textarea rows="6 " cols="60 " placeholder=" enter additional details here " required> </textarea> <br> <br>
                 </div>
 
-                <div class="fieldContainer ">
-                    <input class="submitButton " type="button " value="Submit " onclick="handleFormSubmit() ">
+                <div class="fieldContainer">
+                    <input class="submitButton" type="button" value="Submit" onclick="handleFormSubmit()">
                 </div>
             </form>
         </div>
 
-        <div class="column " id="appointmentFormThanks " style="display: none; ">
+        <div class="column" id="appointmentFormThanks" style="display: none;">
             <h1 class="title ">Thank You.</h1>
-            <p class="title ">Your request has been saved!</p>
+            <p class="title ">Your request has been received!</p>
         </div>
 
     </div>
@@ -132,11 +136,11 @@
                 <div class="col-lg-4 col-md-6 mb-5 mb-md-5 ">
                     <div class="ftco-footer-widget mb-4 ml-md-4 ">
                         <h2 class="ftco-heading-2 ">Connect with us</h2>
-                        <ul class="list-unstyled ">
-                            <li><a href="https://www.facebook.com/FlowerRoad/ " class="py-2 d-block ">Facebook</a></li>
-                            <li><a href="https://www.instagram.com/flowerroad/ " class="py-2 d-block ">Instagram</a></li>
-                            <li><a href="https://twitter.com/FLOWERROAD " class="py-2 d-block ">Twitter</a></li>
-                        </ul>
+                        <span style="white-space:nowrap">
+                        <a href="https://www.facebook.com/FlowerRoad/ " class="py-2 d-block "><img src="icons/facebook-Icon.png"></a>
+                        <a href="https://www.instagram.com/flowerroad/ " class="py-2 d-block "><img src="icons/Instagram-Icon.png"></a>
+                        <a href="https://twitter.com/FLOWERROAD " class="py-2 d-block "><img src="icons/Twitter-Icon.png"></a>
+                        </span>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-5 mb-md-5 ">
@@ -146,9 +150,9 @@
                             <ul>
                                 <li><span class="icon icon-map-marker "></span><span class="text ">55 Lexington Ave, New York, New York, USA
                                 </span></li><br>
-                                <li><a href="# "><span class="icon icon-phone "></span><span class="text ">	(646) 312 1000
+                                <li><a href="tel:646-312-1000 "><span class="icon icon-phone "></span><span class="text ">	(646) 312 1000
                                 </span></a></li><br>
-                                <li><a href="# "><span class="icon icon-envelope "></span><span class="text ">	FR@FlowerRoad.com</span></a></li>
+                                <li><a href="mailto:FR@FlowerRoad.com "><span class="icon icon-envelope "></span><span class="text ">	FR@FlowerRoad.com</span></a></li>
                             </ul>
                         </div>
                     </div>
